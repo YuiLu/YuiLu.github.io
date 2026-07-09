@@ -11,23 +11,22 @@ top_img: /img/top_img_eva_compress.jpg
   margin-bottom: 10px;
 }
 .skill-row .skill-icon {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   flex-shrink: 0;
   margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .skill-row .skill-icon img {
   width: 24px;
   height: 24px;
   object-fit: contain;
+  display: block;
 }
 .skill-row .skill-name {
-  width: 130px;
   font-size: 0.9em;
+  line-height: 24px;
   flex-shrink: 0;
+  margin-right: 10px;
 }
 .skill-row .skill-track {
   flex: 1;
@@ -35,29 +34,15 @@ top_img: /img/top_img_eva_compress.jpg
   background: rgba(128,128,128,0.15);
   border-radius: 4px;
   overflow: hidden;
-  margin: 0 10px;
+}
+[data-theme="dark"] .skill-row .skill-track {
+  background: rgba(255,255,255,0.08);
 }
 .skill-row .skill-fill {
   height: 100%;
   border-radius: 4px;
   background: linear-gradient(90deg, #59ADB8, #4a9aa4);
   transition: width 0.8s ease;
-}
-.skill-row .skill-level {
-  width: 60px;
-  font-size: 0.8em;
-  color: #59ADB8;
-  flex-shrink: 0;
-  text-align: right;
-}
-[data-theme="dark"] .skill-row .skill-track {
-  background: rgba(255,255,255,0.08);
-}
-.skill-section-title {
-  font-size: 1.05em;
-  font-weight: bold;
-  color: #59ADB8;
-  margin: 20px 0 10px;
 }
 .work-entry {
   margin-bottom: 24px;
@@ -108,14 +93,14 @@ top_img: /img/top_img_eva_compress.jpg
 
 # Skills
 
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"></span><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">Proficient</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hlsl/hlsl-original.svg" alt="HLSL" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'"></span><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div><span class="skill-level">Proficient</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></span><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">Familiar</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></span><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div><span class="skill-level">Basic</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">Proficient</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">Proficient</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div><span class="skill-level">Basic</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/houdini/houdini-original.svg" alt="Houdini" onerror="this.style.display='none'"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div><span class="skill-level">Basic</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"></span><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hlsl/hlsl-original.svg" alt="HLSL" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'"></span><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></span><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></span><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/houdini/houdini-original.svg" alt="Houdini" onerror="this.style.display='none'"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
 
 # Work Experience
 
