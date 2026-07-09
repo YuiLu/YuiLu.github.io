@@ -108,22 +108,14 @@ top_img: /img/top_img_eva_compress.jpg
 
 # Skills
 
-<div class="skill-section-title">Programming Languages</div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"></span><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">Proficient</span></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hlsl/hlsl-original.svg" alt="HLSL" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'"></span><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div><span class="skill-level">Proficient</span></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></span><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">Familiar</span></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></span><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div><span class="skill-level">Basic</span></div>
-
-<div class="skill-section-title">Game Engines</div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">Familiar</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Niagara"></span><span class="skill-name">Niagara VFX</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">Proficient</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Material"></span><span class="skill-name">UE Materials</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">Familiar</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">Proficient</span></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">Proficient</span></div>
-
-<div class="skill-section-title">DCC & Tools</div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div><span class="skill-level">Basic</span></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/houdini/houdini-original.svg" alt="Houdini" onerror="this.style.display='none'"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div><span class="skill-level">Basic</span></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></span><span class="skill-name">Git</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">Familiar</span></div>
 
 # Work Experience
 
