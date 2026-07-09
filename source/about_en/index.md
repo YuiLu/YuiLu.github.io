@@ -2,7 +2,7 @@
 title: Personal Info
 date: 2024-01-02 20:48:25
 type: "about_en"
-top_img: /images/top_img_eva_compress.jpg
+top_img: /img/top_img_eva_compress.jpg
 ---
 <style>
 .skill-row {
