@@ -9,7 +9,7 @@ mathjax: true
 top_img: /images/GAMES202_topimg/6.jpg
 cover: /images/cover/6.png
 abbrlink: 59282
-date: 2024-04-10 18:00:00
+date: 2026-07-09 18:00:00
 ---
 
 复试完终于有时间回来学点自己的东西了，趁着刚看完一套[U++网络同步](https://zhida.zhihu.com/search?content_id=242522416&content_type=Article&match_order=1&q=U%2B%2B%E7%BD%91%E7%BB%9C%E5%90%8C%E6%AD%A5&zhida_source=entity)，正好自己动手做点有意思的东西练习练习，尝试复刻一下大表哥的[死眼系统](https://zhida.zhihu.com/search?content_id=242522416&content_type=Article&match_order=1&q=%E6%AD%BB%E7%9C%BC%E7%B3%BB%E7%BB%9F&zhida_source=entity)

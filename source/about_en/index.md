@@ -100,7 +100,7 @@ top_img: /img/top_img_eva_compress.jpg
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/houdini/houdini-original.svg" alt="Houdini" onerror="this.style.display='none'"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/houdini.svg" alt="Houdini" onerror="this.style.display='none'" style="filter:invert(0.3)"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
 
 # Work Experience
 
