@@ -13,8 +13,8 @@ menu:
   Timeline: /archives/ || fas fa-archive
   Tags: /tags/ || fas fa-tags
   Categories || fas fa-folder-open || hide:
-    Note: /notes/ || fas fa-edit
-    Blog: /blogs/ || fas fa-file-alt
+    Note: /tags/Notes/ || fas fa-edit
+    Blog: /tags/Blogs/ || fas fa-file-alt
   Life||fa fa-heartbeat:
     Travel: /travel/ || fas fa-plane-departure
     ACGN: /animes/ || fas fa-mug-hot

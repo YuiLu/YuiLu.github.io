@@ -4,21 +4,180 @@ date: 2024-01-13 15:57:22
 type: "about_cn"
 top_img: /img/top_img_eva_compress.jpg
 ---
-*.gif 已转为 webm 格式，加载速度大幅提升*
+<style>
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px 24px;
+  margin: 20px 0;
+}
+.skill-category h3 {
+  font-size: 1.1em;
+  color: var(--tab-border-color, #59ADB8);
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(89,173,184,0.3);
+  padding-bottom: 4px;
+}
+.skill-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.skill-bar .skill-name {
+  width: 90px;
+  font-size: 0.9em;
+  color: var(--font-color);
+  flex-shrink: 0;
+}
+.skill-bar .skill-track {
+  flex: 1;
+  height: 8px;
+  background: rgba(128,128,128,0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 8px;
+}
+.skill-bar .skill-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #59ADB8, #4a9aa4);
+  transition: width 0.8s ease;
+}
+.skill-bar .skill-level {
+  width: 50px;
+  font-size: 0.8em;
+  color: var(--tab-border-color, #59ADB8);
+  flex-shrink: 0;
+  text-align: right;
+}
+[data-theme="dark"] .skill-bar .skill-track {
+  background: rgba(255,255,255,0.08);
+}
+.work-entry {
+  margin-bottom: 24px;
+  padding-left: 16px;
+  border-left: 2px solid rgba(89,173,184,0.4);
+}
+.work-entry .work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.work-entry .work-company {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: var(--tab-border-color, #59ADB8);
+}
+.work-entry .work-date {
+  font-size: 0.85em;
+  color: var(--third-text-color);
+}
+.work-entry .work-role {
+  font-size: 0.9em;
+  color: var(--third-text-color);
+  margin: 2px 0 8px;
+}
+.work-entry .work-desc {
+  font-size: 0.9em;
+  color: var(--font-color);
+  line-height: 1.7;
+}
+.work-entry .work-desc ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+</style>
+
 # About Me
-* 本科就读于上海对外经贸大学，数据科学与大数据技术专业
-* 于2021年9月开始技术美术相关技能的学习（渲染特效方向）至今已自主完成 GAMES101、GAMES202的学习，并在知乎和语雀以笔记形式记录了自己的学习过程
-* 技术宅，具有较强的学习主动性，能快速吸收新知识并用于实际应用。喜欢研究特殊效果的实现原理
-* 对自己的未来有着明确的规划，清楚自己的学习路线，并正有条不紊的落实中
-* 爱好：指弹吉他<span class='heimu' title="你知道得太多了">（只听不弹）</span>/电吉他，ACGN爱好者，喜欢一切与计算机图形相关的技术
-# Skills
-* C++，Cg/HLSL，Python（基本掌握），C#（了解）
-* 良好的数理统计基础，对深度学习有基本的了解，持续关注AIGC相关领域发展动向
+
+* 硕士就读于上海大学，数字媒体创意工程专业；本科就读于上海对外经贸大学，数据科学与大数据技术专业
+* 于2022年开始接触技术美术相关技能的学习（AI/特效/渲染/工具），至今已自主完成 GAMES101、GAMES202的学习，并在知乎以笔记形式记录了自己的学习过程
+* 以学生一作身份在 ECCV 2026 发表可控视频镜头预演生成系统相关成果
+* 良好的英文读写能力（雅思7.0），能够无障碍阅读前沿英文文献与技术文档
+* 良好的数理统计基础，持续密切关注 AIGC、三维视觉领域发展动向
 * 具有一定计算机图形学相关的知识储备，了解基本的数据结构与算法原理
-* 能够熟练使用UE4 Niagara进行特效制作
-* 对Unity中的特效模块有所了解，并具有一定Shader编写经验（Build-in，URP）
-* 对常见的卡通渲染手法有所了解，并在Unity尝试过效果的落地与实现
-* 能够使用Blender进行简单模型的制作，并在未来有bpy，mel等脚本语言的学习规划
+* 技术宅，具有较强的自驱力与学习主动性，能快速吸收新知识并用于实际应用。喜欢研究游戏内特殊效果的实现原理
+* 爱好：指弹吉他<span class='heimu' title="你知道得太多了">（只听不弹）</span>/电吉他，ACGN爱好者，Kigurumi、摄影，喜欢一切与计算机图形相关的技术
+
+# Skills
+
+<div class="skill-grid">
+  <div class="skill-category">
+    <h3>💻 编程语言</h3>
+    <div class="skill-bar"><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div><span class="skill-level">掌握</span></div>
+    <div class="skill-bar"><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">掌握</span></div>
+    <div class="skill-bar"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
+    <div class="skill-bar"><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div><span class="skill-level">了解</span></div>
+  </div>
+  <div class="skill-category">
+    <h3>🎮 游戏引擎</h3>
+    <div class="skill-bar"><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
+    <div class="skill-bar"><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">掌握</span></div>
+    <div class="skill-bar"><span class="skill-name">UE5 Niagara</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">熟练</span></div>
+    <div class="skill-bar"><span class="skill-name">UE5 材质</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
+  </div>
+  <div class="skill-category">
+    <h3>🖌️ DCC 工具</h3>
+    <div class="skill-bar"><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div><span class="skill-level">了解</span></div>
+    <div class="skill-bar"><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div><span class="skill-level">了解</span></div>
+    <div class="skill-bar"><span class="skill-name">Shader</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
+    <div class="skill-bar"><span class="skill-name">Timeline</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">熟悉</span></div>
+  </div>
+  <div class="skill-category">
+    <h3>🤖 AI / 研究</h3>
+    <div class="skill-bar"><span class="skill-name">深度学习</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">熟悉</span></div>
+    <div class="skill-bar"><span class="skill-name">Diffusion</span><div class="skill-track"><div class="skill-fill" style="width:65%"></div></div><span class="skill-level">熟悉</span></div>
+    <div class="skill-bar"><span class="skill-name">LLM/RAG</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">熟悉</span></div>
+    <div class="skill-bar"><span class="skill-name">知识图谱</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div><span class="skill-level">了解</span></div>
+  </div>
+</div>
+
+# Work Experience
+
+<div class="work-entry">
+  <div class="work-header">
+    <span class="work-company">网易雷火事业群 · 伏羲人工智能实验室</span>
+    <span class="work-date">2026.05 — 至今</span>
+  </div>
+  <div class="work-role">决策智能组 · 人工智能算法实习生</div>
+  <div class="work-desc">
+    <ul>
+      <li>参与永劫无间AI Bot的研发，负责上层剧本挖掘，从录像中提炼可复用的战术模式</li>
+      <li>基于时间知识图谱与聚类构建挖掘管线，由Agent查询图谱生成剧本对接对局投放</li>
+    </ul>
+  </div>
+</div>
+
+<div class="work-entry">
+  <div class="work-header">
+    <span class="work-company">腾讯IEG · 互动娱乐事业群</span>
+    <span class="work-date">2025.11 — 2026.05</span>
+  </div>
+  <div class="work-role">国内发行线 · 生态发展部 · 技术美术实习生</div>
+  <div class="work-desc">
+    <ul>
+      <li><strong>独立负责UE5 AI智能打光系统的研发</strong>，从零搭建引擎内灯光数据采集与模型训练管线</li>
+      <li>负责Arc Raider移动端特效资产的整理与规范的制定</li>
+      <li>参与制定了一套全新的适用于FPS项目的场景灯光管线，确保室内外曝光正确；开发物理灯具插件，提供DataAsset配置接口，统合大气、后处理、TOD与灯光配置流程</li>
+    </ul>
+  </div>
+</div>
+
+<div class="work-entry">
+  <div class="work-header">
+    <span class="work-company">藤库网络科技有限公司</span>
+    <span class="work-date">2025.08 — 2025.10</span>
+  </div>
+  <div class="work-role">TATD组 · 技术美术实习生</div>
+  <div class="work-desc">
+    <ul>
+      <li>参与项目代号One Up，在项目既定资产规范下协助完成外部资产的入库</li>
+      <li>开发并维护引擎内贴图通道合并映射工具和场景材质覆写扫描工具</li>
+    </ul>
+  </div>
+</div>
+
 # Independent Works
 ## 护盾受击效果
 <video autoplay loop muted playsinline poster="/images/folio/shield_hit.gif"><source src="/images/folio/shield_hit.webm" type="video/webm"></video>
@@ -28,11 +187,8 @@ WPO，蓝图受击响应逻辑
 项目由腾讯IEG引擎图形学远程课题实践活动发起。通过该项目初步对深度学习和强化学习相关概念进行了一定程度的学习和探索，了解到了特效制作过程中的一些性能评判标准，也借此尝试了部分理论的建模，并在此过程中从零到一学习了UE5插件开发的相关知识，最后成功实现了如图所示的Niagara批量添加LOD模块的功能（Slate编写等）
 # Tutorial Works
 ## C++软光追渲染器
-<!-- ![Alt text](../images/GAMES101_PathTracing.png) -->
 ![](/images/folio/GAMES101_PathTracing.png)
-<!-- ![Alt text](../images/In_One_Weekend_spp=100_small.png) -->
 ![](/images/folio/In_One_Weekend_spp=100_small.png)
-<!-- ![Alt text](../images/The_Next_Week_Final_spp=1024_small.png) -->
 ![](/images/folio/The_Next_Week_Final_spp=1024_small.png)
 跟随 GAMES101 的课程进度，独立完成了BVH和蒙特卡洛微表面的实现，后通过 Peter Shirely 手写光追系列教程完成了整个渲染器的搭建，并在此基础上实现了 Tone Mapping 和多线程加速，未来还有计划加入更多诸如模型 IO、包围盒优化等技术点的实现
 ## III Elemental shrine
