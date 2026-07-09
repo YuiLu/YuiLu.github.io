@@ -5,58 +5,64 @@ type: "about_cn"
 top_img: /img/top_img_eva_compress.jpg
 ---
 <style>
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px 24px;
-  margin: 20px 0;
-}
-.skill-category h3 {
-  font-size: 1.1em;
-  color: var(--tab-border-color, #59ADB8);
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(89,173,184,0.3);
-  padding-bottom: 4px;
-}
-.skill-bar {
+.skill-row {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
-.skill-bar .skill-name {
-  width: 90px;
+.skill-row .skill-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-row .skill-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.skill-row .skill-name {
+  width: 120px;
   font-size: 0.9em;
-  color: var(--font-color);
   flex-shrink: 0;
 }
-.skill-bar .skill-track {
+.skill-row .skill-track {
   flex: 1;
   height: 8px;
   background: rgba(128,128,128,0.15);
   border-radius: 4px;
   overflow: hidden;
-  margin: 0 8px;
+  margin: 0 10px;
 }
-.skill-bar .skill-fill {
+.skill-row .skill-fill {
   height: 100%;
   border-radius: 4px;
   background: linear-gradient(90deg, #59ADB8, #4a9aa4);
   transition: width 0.8s ease;
 }
-.skill-bar .skill-level {
+.skill-row .skill-level {
   width: 50px;
   font-size: 0.8em;
-  color: var(--tab-border-color, #59ADB8);
+  color: #59ADB8;
   flex-shrink: 0;
   text-align: right;
 }
-[data-theme="dark"] .skill-bar .skill-track {
+[data-theme="dark"] .skill-row .skill-track {
   background: rgba(255,255,255,0.08);
+}
+.skill-section-title {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #59ADB8;
+  margin: 20px 0 10px;
 }
 .work-entry {
   margin-bottom: 24px;
   padding-left: 16px;
-  border-left: 2px solid rgba(89,173,184,0.4);
+  border-left: 2px solid #59ADB8;
 }
 .work-entry .work-header {
   display: flex;
@@ -67,20 +73,22 @@ top_img: /img/top_img_eva_compress.jpg
 .work-entry .work-company {
   font-size: 1.05em;
   font-weight: bold;
-  color: var(--tab-border-color, #59ADB8);
+  color: #59ADB8;
+}
+[data-theme="dark"] .work-entry .work-company {
+  color: #7fd0d9;
 }
 .work-entry .work-date {
   font-size: 0.85em;
-  color: var(--third-text-color);
+  opacity: 0.7;
 }
 .work-entry .work-role {
   font-size: 0.9em;
-  color: var(--third-text-color);
+  opacity: 0.75;
   margin: 2px 0 8px;
 }
 .work-entry .work-desc {
   font-size: 0.9em;
-  color: var(--font-color);
   line-height: 1.7;
 }
 .work-entry .work-desc ul {
@@ -102,36 +110,22 @@ top_img: /img/top_img_eva_compress.jpg
 
 # Skills
 
-<div class="skill-grid">
-  <div class="skill-category">
-    <h3>💻 编程语言</h3>
-    <div class="skill-bar"><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div><span class="skill-level">掌握</span></div>
-    <div class="skill-bar"><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">掌握</span></div>
-    <div class="skill-bar"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
-    <div class="skill-bar"><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div><span class="skill-level">了解</span></div>
-  </div>
-  <div class="skill-category">
-    <h3>🎮 游戏引擎</h3>
-    <div class="skill-bar"><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
-    <div class="skill-bar"><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">掌握</span></div>
-    <div class="skill-bar"><span class="skill-name">UE5 Niagara</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">熟练</span></div>
-    <div class="skill-bar"><span class="skill-name">UE5 材质</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
-  </div>
-  <div class="skill-category">
-    <h3>🖌️ DCC 工具</h3>
-    <div class="skill-bar"><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div><span class="skill-level">了解</span></div>
-    <div class="skill-bar"><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div><span class="skill-level">了解</span></div>
-    <div class="skill-bar"><span class="skill-name">Shader</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
-    <div class="skill-bar"><span class="skill-name">Timeline</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">熟悉</span></div>
-  </div>
-  <div class="skill-category">
-    <h3>🤖 AI / 研究</h3>
-    <div class="skill-bar"><span class="skill-name">深度学习</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">熟悉</span></div>
-    <div class="skill-bar"><span class="skill-name">Diffusion</span><div class="skill-track"><div class="skill-fill" style="width:65%"></div></div><span class="skill-level">熟悉</span></div>
-    <div class="skill-bar"><span class="skill-name">LLM/RAG</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">熟悉</span></div>
-    <div class="skill-bar"><span class="skill-name">知识图谱</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div><span class="skill-level">了解</span></div>
-  </div>
-</div>
+<div class="skill-section-title">编程语言</div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"></span><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">掌握</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hlsl/hlsl-original.svg" alt="HLSL" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'"></span><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div><span class="skill-level">掌握</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></span><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></span><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div><span class="skill-level">了解</span></div>
+
+<div class="skill-section-title">游戏引擎</div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Niagara"></span><span class="skill-name">Niagara 特效</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">熟练</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="材质"></span><span class="skill-name">UE 材质</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div><span class="skill-level">熟悉</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div><span class="skill-level">掌握</span></div>
+
+<div class="skill-section-title">DCC & 工具</div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div><span class="skill-level">了解</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/houdini/houdini-original.svg" alt="Houdini" onerror="this.style.display='none'"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div><span class="skill-level">了解</span></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></span><span class="skill-name">Git</span><div class="skill-track"><div class="skill-fill" style="width:70%"></div></div><span class="skill-level">熟悉</span></div>
 
 # Work Experience
 

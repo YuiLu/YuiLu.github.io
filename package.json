@@ -1,15 +1,16 @@
 {
-  "name": "hexo-site",
+  "name": "yuilu-blog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "postinstall": "node -e \"try{require('fs').rmSync('node_modules/yuilu-blog',{recursive:true,force:true})}catch(e){}\""
   },
   "hexo": {
-    "version": "7.0.0"
+    "version": "7.3.0"
   },
   "dependencies": {
     "hexo": "^7.0.0",
@@ -27,7 +28,7 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-site": "file:",
-    "hexo-theme-butterfly": "^4.12.0"
+    "hexo-theme-butterfly": "^4.12.0",
+    "yuilu-blog": "file:"
   }
 }
