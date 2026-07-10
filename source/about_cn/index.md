@@ -3,6 +3,7 @@ title: Personal Info
 date: 2024-01-13 15:57:22
 type: "about_cn"
 top_img: /img/top_img_eva_compress.jpg
+toc: true
 ---
 <style>
 .skill-row {
@@ -80,6 +81,11 @@ top_img: /img/top_img_eva_compress.jpg
   margin: 4px 0 0;
   padding-left: 18px;
 }
+.folio-video {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 8px 0;
+}
 </style>
 
 # About Me
@@ -102,7 +108,7 @@ top_img: /img/top_img_eva_compress.jpg
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
 <div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/houdini.svg" alt="Houdini" onerror="this.style.display='none'" style="filter:invert(0.3)"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
+<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/houdini.svg" alt="Houdini" onerror="this.style.display='none'" style="filter:invert(0.5) sepia(1) hue-rotate(140deg) saturate(3)"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
 
 # Work Experience
 
@@ -149,31 +155,65 @@ top_img: /img/top_img_eva_compress.jpg
   </div>
 </div>
 
-# Independent Works
+# Portfolio
+
 ## 护盾受击效果
 ![](/images/folio/shield_hit.gif)
 WPO，蓝图受击响应逻辑
+
 ## 基于学习的特效智能LOD生成方案研究
 ![](/images/folio/NiagaraAutoLod.gif)
 项目由腾讯IEG引擎图形学远程课题实践活动发起。通过该项目初步对深度学习和强化学习相关概念进行了一定程度的学习和探索，了解到了特效制作过程中的一些性能评判标准，也借此尝试了部分理论的建模，并在此过程中从零到一学习了UE5插件开发的相关知识，最后成功实现了如图所示的Niagara批量添加LOD模块的功能（Slate编写等）
-# Tutorial Works
+
 ## C++软光追渲染器
 ![](/images/folio/GAMES101_PathTracing.png)
 ![](/images/folio/In_One_Weekend_spp=100_small.png)
 ![](/images/folio/The_Next_Week_Final_spp=1024_small.png)
-跟随 GAMES101 的课程进度，独立完成了BVH和蒙特卡洛微表面的实现，后通过 Peter Shirely 手写光追系列教程完成了整个渲染器的搭建，并在此基础上实现了 Tone Mapping 和多线程加速，未来还有计划加入更多诸如模型 IO、包围盒优化等技术点的实现
-## III Elemental shrine
+跟随 GAMES101 的课程进度，独立完成了BVH和蒙特卡洛微表面的实现，后通过 Peter Shirely 手写光追系列教程完成了整个渲染器的搭建，并在此基础上实现了 Tone Mapping 和多线程加速
+
+## ShaderToy 练习
+![](/images/folio/ShaderToy.gif)
+
+## 可控视频镜头预演生成系统（ECCV 2026）
+<video class="folio-video" controls preload="metadata" src="/images/folio/Camera/teaser.mp4"></video>
+<video class="folio-video" controls preload="metadata" src="/images/folio/Camera/unity.mp4"></video>
+![](/images/folio/Camera/method.png)
+以学生一作身份在 ECCV 2026 发表。研究如何将引擎内的镜头预演与现有视频生成大模型相结合，使视频生成工作流更可控。负责课题项目主要功能的实现，涉及：Unity内LLM交互生成剧本与拍摄方案（RAG/Schema结构化）、节点式GUI编辑器、3D相机轨迹数据集构建、基于自回归和Diffusion的轨迹生成模型训练、基于DPO的轨迹后训练
+
+## UE5 AI 智能打光系统
+![](/images/folio/Light/Pipeline.png)
+![](/images/folio/Light/Extractor.png)
+<video class="folio-video" controls preload="metadata" src="/images/folio/Light/灯光数据驱动demo.mp4"></video>
+腾讯IEG实习期间独立负责。从零搭建引擎内灯光数据采集与模型训练管线，实现AI辅助打光
+
+## UE5 场景灯光管线 & 物理灯具插件
+<video class="folio-video" controls preload="metadata" src="/images/folio/260710/FPS.mp4"></video>
+<video class="folio-video" controls preload="metadata" src="/images/folio/260710/TOD.mp4"></video>
+适用于FPS项目的场景灯光管线，确保室内外曝光正确；物理灯具插件提供DataAsset配置接口，统合大气、后处理、TOD与灯光配置流程
+
+## VFX 作品
+### 黑Saber 特效
+<video class="folio-video" controls preload="metadata" src="/images/folio/VFX/黑Saber1.mp4"></video>
+### Sonetto 特效
+<video class="folio-video" controls preload="metadata" src="/images/folio/VFX/Sonetto.mp4"></video>
+
+### VFX Tutorial
 综合使用UE4 Niagara、材质与蓝图实现的一系列高级特效
-### 陨石 & 火龙卷
-![](/images/folio/陨石_火龙卷.gif)
+#### 陨石 & 火龙卷
+![](/images/folio/VFX/Tutorial/陨石_火龙卷.gif)
 视差陨石坑，后期模糊，技能联动，斜切UV...
-### 落雷 & 电弧
-![](/images/folio/落雷.gif)
-![](/images/folio/电弧.gif)
+#### 落雷 & 电弧
+![](/images/folio/VFX/Tutorial/落雷.gif)
+![](/images/folio/VFX/Tutorial/电弧.gif)
 Ribbon，直线场，伤害异步，Event拖尾...
-### 冰锥 & 歼灭
-![](/images/folio/冰锥_歼灭.gif)
+#### 冰锥 & 歼灭
+![](/images/folio/VFX/Tutorial/冰锥_歼灭.gif)
 视差冰面，SSS冰锥，复杂索敌逻辑，Spawn Group...
-## Unity URP - 仿原神渲染
-![](/images/folio/甘雨仿原神渲染.gif)
+#### Unity URP - 仿原神渲染
+![](/images/folio/VFX/Tutorial/甘雨仿原神渲染.gif)
 Ramp阴影过渡，屏幕空间等距边缘光，背面法线外扩描边，SDF面部阴影...
+
+## Unity URP 卡通渲染
+<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/描边.mp4"></video>
+<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/GI1.mp4"></video>
+<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/Render.mp4"></video>
