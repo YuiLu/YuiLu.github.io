@@ -1,0 +1,17 @@
+{
+  // ESA Pages 配置
+  // 文档：https://www.alibabacloud.com/help/zh/edge-security-acceleration/esa/
+  "build": {
+    "command": "npx hexo generate",
+    "output": "public"
+  },
+  // 静态资源目录（相对于仓库根目录的构建产物目录）
+  "assets": "public",
+  // 路由规则：所有路径回退到静态资源
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
