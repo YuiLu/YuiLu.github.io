@@ -91,13 +91,14 @@ toc: true
 # About Me
 
 * 硕士就读于上海大学，数字媒体创意工程专业；本科就读于上海对外经贸大学，数据科学与大数据技术专业
-* 于2022年开始接触技术美术相关技能的学习（AI/特效/渲染/工具），至今已自主完成 GAMES101、GAMES202的学习，并在知乎以笔记形式记录了自己的学习过程
+* 于 2022 年开始系统接触游戏图形与 AI 交叉领域的相关技能（渲染/AI/特效/工具链）
 * 以学生一作身份在 ECCV 2026 发表可控视频镜头预演生成系统相关成果
 * 良好的英文读写能力（雅思7.0），能够无障碍阅读前沿英文文献与技术文档
-* 良好的数理统计基础，持续密切关注 AIGC、三维视觉领域发展动向
+* 良好的数理统计与数据科学基础，具备模型训练与数据集构建处理经验
 * 具有一定计算机图形学相关的知识储备，了解基本的数据结构与算法原理
 * 技术宅，具有较强的自驱力与学习主动性，能快速吸收新知识并用于实际应用。喜欢研究游戏内特殊效果的实现原理
-* 爱好：指弹吉他<span class='heimu' title="你知道得太多了">（只听不弹）</span>/电吉他，ACGN爱好者，Kigurumi、摄影，喜欢一切与计算机图形相关的技术
+* 熟悉常见的卡通渲染手法，分别在 Unity 和 UE5 尝试过效果的落地与实现
+* 爱好：ACGN爱好者，Kigurumi、摄影，指弹吉他<span class='heimu' title="你知道得太多了">（只听不弹）</span>/电吉他，喜欢一切与计算机图形相关的技术
 
 # Skills
 
@@ -157,23 +158,6 @@ toc: true
 
 # Portfolio
 
-## 护盾受击效果
-![](/images/folio/shield_hit.gif)
-WPO，蓝图受击响应逻辑
-
-## 基于学习的特效智能LOD生成方案研究
-![](/images/folio/NiagaraAutoLod.gif)
-项目由腾讯IEG引擎图形学远程课题实践活动发起。通过该项目初步对深度学习和强化学习相关概念进行了一定程度的学习和探索，了解到了特效制作过程中的一些性能评判标准，也借此尝试了部分理论的建模，并在此过程中从零到一学习了UE5插件开发的相关知识，最后成功实现了如图所示的Niagara批量添加LOD模块的功能（Slate编写等）
-
-## C++软光追渲染器
-![](/images/folio/GAMES101_PathTracing.png)
-![](/images/folio/In_One_Weekend_spp=100_small.png)
-![](/images/folio/The_Next_Week_Final_spp=1024_small.png)
-跟随 GAMES101 的课程进度，独立完成了BVH和蒙特卡洛微表面的实现，后通过 Peter Shirely 手写光追系列教程完成了整个渲染器的搭建，并在此基础上实现了 Tone Mapping 和多线程加速
-
-## ShaderToy 练习
-![](/images/folio/ShaderToy.gif)
-
 ## 可控视频镜头预演生成系统（ECCV 2026）
 <video class="folio-video" controls preload="metadata" src="/images/folio/Camera/teaser.mp4"></video>
 <video class="folio-video" controls preload="metadata" src="/images/folio/Camera/unity.mp4"></video>
@@ -186,6 +170,8 @@ WPO，蓝图受击响应逻辑
 <video class="folio-video" controls preload="metadata" src="/images/folio/Light/灯光数据驱动demo.mp4"></video>
 腾讯IEG实习期间独立负责。从零搭建引擎内灯光数据采集与模型训练管线，实现AI辅助打光
 
+## FPS
+
 ## UE5 场景灯光管线 & 物理灯具插件
 <video class="folio-video" controls preload="metadata" src="/images/folio/260710/FPS.mp4"></video>
 <video class="folio-video" controls preload="metadata" src="/images/folio/260710/TOD.mp4"></video>
@@ -197,8 +183,7 @@ WPO，蓝图受击响应逻辑
 ### Sonetto 特效
 <video class="folio-video" controls preload="metadata" src="/images/folio/VFX/Sonetto.mp4"></video>
 
-### VFX Tutorial
-综合使用UE4 Niagara、材质与蓝图实现的一系列高级特效
+### Tutorial Works
 #### 陨石 & 火龙卷
 ![](/images/folio/VFX/Tutorial/陨石_火龙卷.gif)
 视差陨石坑，后期模糊，技能联动，斜切UV...
@@ -209,11 +194,33 @@ Ribbon，直线场，伤害异步，Event拖尾...
 #### 冰锥 & 歼灭
 ![](/images/folio/VFX/Tutorial/冰锥_歼灭.gif)
 视差冰面，SSS冰锥，复杂索敌逻辑，Spawn Group...
-#### Unity URP - 仿原神渲染
-![](/images/folio/VFX/Tutorial/甘雨仿原神渲染.gif)
-Ramp阴影过渡，屏幕空间等距边缘光，背面法线外扩描边，SDF面部阴影...
 
-## Unity URP 卡通渲染
+## 卡通渲染
+### UE5.7修改源码定制卡通渲染
 <video class="folio-video" controls preload="metadata" src="/images/folio/Toon/描边.mp4"></video>
 <video class="folio-video" controls preload="metadata" src="/images/folio/Toon/GI1.mp4"></video>
 <video class="folio-video" controls preload="metadata" src="/images/folio/Toon/Render.mp4"></video>
+
+### Unity URP - 仿原神渲染
+![](/images/folio/VFX/Tutorial/甘雨仿原神渲染.gif)
+Ramp阴影过渡，屏幕空间等距边缘光，背面法线外扩描边，SDF面部阴影...
+
+
+
+## 其他
+### 护盾受击效果
+![](/images/folio/shield_hit.gif)
+WPO，蓝图受击响应逻辑
+
+### 基于学习的特效智能LOD生成方案研究
+![](/images/folio/NiagaraAutoLod.gif)
+项目由腾讯IEG引擎图形学远程课题实践活动发起。通过该项目初步对深度学习和强化学习相关概念进行了一定程度的学习和探索，了解到了特效制作过程中的一些性能评判标准，也借此尝试了部分理论的建模，并在此过程中从零到一学习了UE5插件开发的相关知识，最后成功实现了如图所示的Niagara批量添加LOD模块的功能（Slate编写等）
+
+### C++软光追渲染器
+![](/images/folio/GAMES101_PathTracing.png)
+![](/images/folio/In_One_Weekend_spp=100_small.png)
+![](/images/folio/The_Next_Week_Final_spp=1024_small.png)
+跟随 GAMES101 的课程进度，独立完成了BVH和蒙特卡洛微表面的实现，后通过 Peter Shirely 手写光追系列教程完成了整个渲染器的搭建，并在此基础上实现了 Tone Mapping 和多线程加速
+
+### ShaderToy 练习
+![](/images/folio/ShaderToy.gif)
