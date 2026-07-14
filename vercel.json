@@ -1,8 +1,0 @@
-{
-  "buildCommand": "npx hexo generate",
-  "outputDirectory": "public",
-  "framework": null,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" }
-  ]
-}
