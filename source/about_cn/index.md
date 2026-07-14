@@ -170,7 +170,7 @@ toc: true
 <video class="folio-video" controls preload="metadata" src="/images/folio/Light/灯光数据驱动demo.mp4"></video>
 腾讯IEG实习期间独立负责。从零搭建引擎内灯光数据采集与模型训练管线，实现AI辅助打光
 
-## FPS
+## FPS Gameplay
 
 ## UE5 场景灯光管线 & 物理灯具插件
 <video class="folio-video" controls preload="metadata" src="/images/folio/260710/FPS.mp4"></video>
