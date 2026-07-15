@@ -27,7 +27,7 @@ top_img:
 
 最早人们从小孔成像开始研究相机，以小孔成像为原理的相机叫做针孔相机
 
-![小孔成像](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%B0%8F%E5%AD%94%E6%88%90%E5%83%8F.png)
+![小孔成像](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%B0%8F%E5%AD%94%E6%88%90%E5%83%8F.png)
 
 针孔相机拍出的东西是没有深度可言的，像的所有地方都是锐利的，而透镜成像则会产生虚化，这在之后会进一步展开讨论
 
@@ -45,17 +45,17 @@ top_img:
 
 视场（field of view，FoV）指的是相机的拍摄范围，其大小与传感器大小以及焦距有关
 
-![视场1](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%A7%86%E5%9C%BA1.png)
+![视场1](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%A7%86%E5%9C%BA1.png)
 
 两个参数共同作用下视场大小是很难被衡量的，所以我们通常固定传感器的大小，通过变换焦距来控制其大小（现实中一般相机通常为35mm），这也是市面上买单反镜头有焦距的区别而没有传感器大小区别的原因
 
-![视场2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%A7%86%E5%9C%BA2.png)
+![视场2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%A7%86%E5%9C%BA2.png)
 
 总结来说，传感器大小相同，焦距越大，视场越窄；焦距相同，传感器越大，视场越宽；视大小相同场，焦距和传感器成比例
 
 下面一系列参数得到的视场大小是相同的，不同传感器对应了不同的设备
 
-![视场4](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%A7%86%E5%9C%BA4.png)
+![视场4](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%A7%86%E5%9C%BA4.png)
 
 ## 曝光
 
@@ -65,7 +65,7 @@ T表示曝光时间，主要由快门控制
 
 E表示Irradiance，由光圈和焦距共同决定
 
-![曝光值定义](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%9B%9D%E5%85%89%E5%80%BC%E5%AE%9A%E4%B9%89.png)
+![曝光值定义](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%9B%9D%E5%85%89%E5%80%BC%E5%AE%9A%E4%B9%89.png)
 
 摄影中控制曝光值主要有三大要素：快门、光圈、感光度
 
@@ -75,7 +75,7 @@ E表示Irradiance，由光圈和焦距共同决定
 
 工作动画：
 
-![快门动画](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BF%AB%E9%97%A8%E5%8A%A8%E7%94%BB.gif)
+![快门动画](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BF%AB%E9%97%A8%E5%8A%A8%E7%94%BB.gif)
 
 快门主要有两个作用：①影响曝光；②影响被摄影物体的形态
 
@@ -85,7 +85,7 @@ E表示Irradiance，由光圈和焦距共同决定
 
 另外，更长的曝光时间也越容易得到运动模糊的效果，就类似光栅化中的反走样，只不过它是对于时间采样的反走样
 
-![曝光时间](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%9B%9D%E5%85%89%E6%97%B6%E9%97%B4.png)
+![曝光时间](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%9B%9D%E5%85%89%E6%97%B6%E9%97%B4.png)
 
 运动模糊并不总是有害的，有时候我们为了表达被拍摄物体的速度感，会刻意的希望加上一些运动模糊
 
@@ -95,9 +95,9 @@ E表示Irradiance，由光圈和焦距共同决定
 
 快门速度越快，被拍摄的高速物体越清晰，反之则会有一定形变
 
-![快门速度](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BF%AB%E9%97%A8%E9%80%9F%E5%BA%A6.jpg)
+![快门速度](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BF%AB%E9%97%A8%E9%80%9F%E5%BA%A6.jpg)
 
-![快门速度](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BF%AB%E9%97%A8%E9%80%9F%E5%BA%A6.png)
+![快门速度](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BF%AB%E9%97%A8%E9%80%9F%E5%BA%A6.png)
 
 
 
@@ -109,10 +109,10 @@ E表示Irradiance，由光圈和焦距共同决定
 
 一般通过F数来表示其大小，F数的明确定义在后面会提及，这里可以先暂时理解为光圈直径的倒数
 
-| ![光圈1](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%881.jpg) | ![光圈3](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%883.jpg) |
+| ![光圈1](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%881.jpg) | ![光圈3](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%883.jpg) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
-![光圈2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%882.jpg)
+![光圈2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%882.jpg)
 
 除此之外，光圈还会影响画面景深，相关内容在之后薄透镜近似中也会详细说明
 
@@ -124,7 +124,7 @@ E表示Irradiance，由光圈和焦距共同决定
 
 但是，随着感光度的增加，感光元件对一些噪声的敏感程度也随之增加，画面就会逐渐出现一些噪点
 
-![感光度](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%84%9F%E5%85%89%E5%BA%A6.png)
+![感光度](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%84%9F%E5%85%89%E5%BA%A6.png)
 
 总结来说，快门、光圈、感光度对曝光的影响总结如下
 
@@ -133,7 +133,7 @@ E表示Irradiance，由光圈和焦距共同决定
 |  **光圈**  | **影响进光量和画面景深** |
 | **感光度** |    **影响曝光和画质**    |
 
-![影响曝光三要素](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BD%B1%E5%93%8D%E6%9B%9D%E5%85%89%E4%B8%89%E8%A6%81%E7%B4%A0.png)
+![影响曝光三要素](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%BD%B1%E5%93%8D%E6%9B%9D%E5%85%89%E4%B8%89%E8%A6%81%E7%B4%A0.png)
 
 相关概念详细可参考：
 
@@ -145,7 +145,7 @@ https://zhuanlan.zhihu.com/p/134166476
 $$
 F^2\propto Shutter\ Speed
 $$
-![进光量](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%BF%9B%E5%85%89%E9%87%8F.png)
+![进光量](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%BF%9B%E5%85%89%E9%87%8F.png)
 
 实际应用方面，在拍摄流光轨迹、延时摄影等慢门题材时，宜用慢速快门和小光圈，而在拍摄高速题材时，宜用高速快门和大光圈，具体可以参照链接最后的部分
 
@@ -153,7 +153,7 @@ $$
 
 真实的透镜并不会如我们想的那么理想，比如下图中的透镜，它无法正确的将光线聚焦为一点，从而出现像差（Aberrations）
 
-![像差](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%83%8F%E5%B7%AE.png)
+![像差](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%83%8F%E5%B7%AE.png)
 
 并且，现实中我们用的相机一般用的都不是单个透镜，而是一个透镜组，这比理想情况复杂的多，在此不做过多讨论
 
@@ -167,7 +167,7 @@ $$
 
 这个方程属于初中内容，简单推导如下：
 
-| ![薄透镜方程1](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%96%84%E9%80%8F%E9%95%9C%E6%96%B9%E7%A8%8B1.png) | ![薄透镜方程2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%96%84%E9%80%8F%E9%95%9C%E6%96%B9%E7%A8%8B2.png) |
+| ![薄透镜方程1](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%96%84%E9%80%8F%E9%95%9C%E6%96%B9%E7%A8%8B1.png) | ![薄透镜方程2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%96%84%E9%80%8F%E9%95%9C%E6%96%B9%E7%A8%8B2.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 
@@ -189,11 +189,11 @@ http://graphics.stanford.edu/courses/cs178-10/applets/gaussian.html
 
 当传感器不在物体真正的成像平面上时，光线会继续沿直线传播，在感光元件上形成一个弥散圈，这个圈就叫CoC（Circle of Confusion）
 
-![CoC](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/CoC.png)
+![CoC](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/CoC.png)
 
 上图的关系式告诉我们，光圈越大，越容易出现模糊
 
-![CoC2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/CoC2.png)
+![CoC2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/CoC2.png)
 
 # F数
 
@@ -203,9 +203,9 @@ F数为n的光圈一般记作f/n，如下图中F数为2，则记作f/2
 
 常用的F数还有f/1.4，f/2.8，f/4.6，f/5.0，f/8，f/11，f/16，f/22，f/32等
 
-![F数1](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/F%E6%95%B01.png)
+![F数1](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/F%E6%95%B01.png)
 
-![F数2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/F%E6%95%B02.png)
+![F数2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/F%E6%95%B02.png)
 
 上图公式进一步说明，拍摄带有虚化的照片要用大光圈，而拍摄清晰照片要用小光圈
 
@@ -213,11 +213,11 @@ F数为n的光圈一般记作f/n，如下图中F数为2，则记作f/2
 
 在实际拍摄过程中，如果要得到足够清晰的像，其实并不需要将物体完美对焦在焦点平面上，只要CoC大致小于胶片传感器上像素的大小，就可以被认为是成功对焦了，如此一来，一个物体可以成功对焦就有了一个距离范围，这个范围就是景深（DoF，depth of field）
 
-![景深1](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%99%AF%E6%B7%B11.png)
+![景深1](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%99%AF%E6%B7%B11.png)
 
 景深公式推导如下：
 
-![景深2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%99%AF%E6%B7%B12.png)
+![景深2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E6%99%AF%E6%B7%B12.png)
 
 动态演示链接：
 
@@ -229,7 +229,7 @@ http://graphics.stanford.edu/courses/cs178/applets/dof.html
 
 但现在我们就可以通过模拟薄透镜来近似做出景深的效果，如图
 
-![光追薄透镜近似](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E8%BF%BD%E8%96%84%E9%80%8F%E9%95%9C%E8%BF%91%E4%BC%BC.png)
+![光追薄透镜近似](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E8%BF%BD%E8%96%84%E9%80%8F%E9%95%9C%E8%BF%91%E4%BC%BC.png)
 
 首先我们要确定薄透镜的大小和位置，由此确定光圈和焦距，然后在透镜和传感器（像素屏幕）上分别采样，并连接成一条线
 
@@ -241,7 +241,7 @@ http://graphics.stanford.edu/courses/cs178/applets/dof.html
 
 首先来看我们是怎么看这个世界的
 
-| ![虚拟现实原理1](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E%E5%8E%9F%E7%90%861.png) | ![虚拟现实原理2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E%E5%8E%9F%E7%90%862.png) |
+| ![虚拟现实原理1](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E%E5%8E%9F%E7%90%861.png) | ![虚拟现实原理2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E%E5%8E%9F%E7%90%862.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 我们眼中的三维世界其实可以类比为一张图片，现实中如果我们在一张图片或者一块幕布上直接记录我们这一刻所看到的所有信息，并把它放在我们的眼前，我们感受到的结果是完全一样的，这也就是虚拟现实的实现原理
@@ -264,7 +264,7 @@ P(\theta,\phi,V_X,V_Y,V_Z)
 $$
 后来，人们发现只需要四维的信息（二维位置信息uv + 二维方向信息θφ）就可以定义光线的方向和位置；再后来，索性方向信息也不要了，直接定义两个平面，两平面上任意两点连线就可以表示空间中任意一条光线
 
-| ![uvst1](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/uvst1.png) | ![uvst2](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/uvst2.png) |
+| ![uvst1](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/uvst1.png) | ![uvst2](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/uvst2.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 光场降维过程的通俗解释：https://www.zhihu.com/question/393235387/answer/1215239335
@@ -273,7 +273,7 @@ $$
 
 进一步用采样来理解这个过程，如图
 
-![uvst3](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/uvst3.png)
+![uvst3](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/uvst3.png)
 
 1° 固定(u,v)，对st平面采样，此时的采样结果可以理解为从uv上某点沿各个方向观察世界的结果
 
@@ -291,7 +291,7 @@ $$
 
 其实记录之前还有一个校正的过程，在这里不做细说
 
-![光场相机原理](F:/-STUDY-/college/%E9%97%AB%E4%BB%A4%E7%90%AA_%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%85%A5%E9%97%A8/101/%E5%9B%BE%E7%89%87/p19-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%BA%E7%9B%B8%E6%9C%BA%E5%8E%9F%E7%90%86.png)
+![光场相机原理](GAMES101%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%EF%BC%888%EF%BC%89-%E7%9B%B8%E6%9C%BA%EF%BC%8C%E9%80%8F%E9%95%9C%EF%BC%8C%E5%85%89%E5%9C%BA/%E5%85%89%E5%9C%BA%E7%9B%B8%E6%9C%BA%E5%8E%9F%E7%90%86.png)
 
 普通相机的传感器像素记录的是irradiance，但是对于光场相机来说，它们记录的分光之后的分量，也就是记录的是Radiance（感觉光场相机就是由昆虫复眼产生的灵感造出来的）
 

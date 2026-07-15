@@ -1,0 +1,19 @@
+/* 黑幕效果：默认黑底黑字（隐藏），hover 显示白字 */
+.heimu,
+.heimu a,
+.heimu code,
+.heimu strong {
+  background-color: #000 !important;
+  color: #000 !important;
+  text-shadow: none !important;
+  transition: color 0.2s ease;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+.heimu:hover,
+.heimu:hover a,
+.heimu:hover code,
+.heimu:hover strong {
+  color: #fff !important;
+}
