@@ -51,7 +51,10 @@ toc: true
   font-size: 0.9em;
   font-weight: 600;
   flex-shrink: 0;
+  width: 72px;
   line-height: 24px;
+  display: flex;
+  align-items: center;
 }
 .skill-card .skill-track {
   flex: 1;
@@ -87,6 +90,7 @@ toc: true
 }
 .edu-card {
   display: flex;
+  align-items: center;
   gap: 16px;
   padding: 20px;
   border: 1px solid rgba(128,128,128,0.15);
@@ -101,6 +105,9 @@ toc: true
   width: 56px;
   height: 56px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .edu-card .edu-badge img {
   width: 56px;
@@ -170,7 +177,36 @@ toc: true
   border-radius: 8px;
   margin: 8px 0;
 }
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid rgba(128,128,128,0.25);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 4px 0 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.lang-switch a {
+  padding: 6px 18px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.7;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+.lang-switch a:hover {
+  opacity: 1;
+}
+.lang-switch a.active {
+  background: #59ADB8;
+  color: #fff;
+  opacity: 1;
+}
 </style>
+
+<div class="lang-switch">
+  <a href="/about_cn/">简体中文</a>
+  <a href="/about_en/" class="active">English</a>
+</div>
 
 # About Me
 * Began learning Technical Artist skills (AI/VFX/Rendering/Tools) since 2022. Self-completed GAMES101 and GAMES202, documenting the journey on Zhihu
@@ -242,7 +278,7 @@ toc: true
 
 <div class="edu-grid">
   <div class="edu-card">
-    <div class="edu-badge"><img src="/img/badge-shu.svg" alt="Shanghai University"></div>
+    <div class="edu-badge"><img src="/img/logo-shu.png" alt="Shanghai University"></div>
     <div class="edu-info">
       <div class="edu-name">Shanghai University</div>
       <div class="edu-major">Digital Media Creative Engineering · M.Sc.</div>
@@ -250,7 +286,7 @@ toc: true
     </div>
   </div>
   <div class="edu-card">
-    <div class="edu-badge"><img src="/img/badge-suibe.svg" alt="SUIBE"></div>
+    <div class="edu-badge"><img src="/img/logo-suibe.png" alt="SUIBE"></div>
     <div class="edu-info">
       <div class="edu-name">Shanghai University of International Business and Economics</div>
       <div class="edu-major">Data Science & Big Data Technology · B.Sc.</div>
@@ -261,63 +297,98 @@ toc: true
 
 # Portfolio
 
-## Shield Hit Effect
-![](/images/folio/shield_hit.gif)
-WPO, bluprint logics of shield-hit response
-
-## Learning-Based Intelligent LOD Generation for VFX
-![](/images/folio/NiagaraAutoLod.gif)
-Initiated by Tencent IEG engine graphics remote project. Explored deep learning and reinforcement learning concepts, VFX performance criteria, theoretical modeling, and UE5 plugin development (Slate UI). Successfully implemented batch Niagara LOD module addition
-
-## C++ Software Ray Tracing Renderer
-![](/images/folio/GAMES101_PathTracing.png)
-![](/images/folio/In_One_Weekend_spp=100_small.png)
-![](/images/folio/The_Next_Week_Final_spp=1024_small.png)
-Followed GAMES101 course, implemented BVH and Monte-Carlo microsurface, then completed the renderer via Peter Shirley's Ray Tracing series with Tone Mapping and multi-threading
-
-## ShaderToy Practice
-![](/images/folio/ShaderToy.gif)
-
 ## Controllable Video Camera Preview Generation (ECCV 2026)
-<video class="folio-video" controls preload="metadata" src="/images/folio/Camera/teaser.mp4"></video>
 <video class="folio-video" controls preload="metadata" src="/images/folio/Camera/unity.mp4"></video>
+Built a complete virtual camera data synthesis pipeline on Unity, including timeline baking tools for three common camera data types, and developed a node-based storyboard video generation system
+<video class="folio-video" controls preload="metadata" src="/images/folio/Camera/teaser.mp4"></video>
 ![](/images/folio/Camera/method.png)
-Published at ECCV 2026 as first student author. Research on combining in-engine camera preview with video generation models for controllable workflows. Responsible for: Unity LLM interaction (RAG/Schema), node-based GUI editor, 3D camera trajectory dataset, autoregressive & Diffusion trajectory generation, DPO post-training
+Published at ECCV 2026 (one of the top three CV conferences) as first author. Research on combining in-engine camera preview with video generation models for controllable workflows. Responsible for the main features of the project: Unity LLM interaction for script & shooting plan generation (RAG/Schema structured), node-based GUI editor, 3D camera trajectory dataset construction, autoregressive & Diffusion-based trajectory generation model training, DPO-based trajectory post-training
 
 ## UE5 AI Smart Lighting System
-![](/images/folio/Light/Pipeline.png)
-![](/images/folio/Light/Extractor.png)
+### Agentic Pipeline
+HDBSCAN semantic clustering for preliminary grouping; after reasoning by the clustering Agent, Grounding DINO + Line Trace achieves precise localization of logical light sources. Team Agent orchestration avoids context bloat
+### Data-Driven Pipeline
 <video class="folio-video" controls preload="metadata" src="/images/folio/Light/灯光数据驱动demo.mp4"></video>
-Independently developed during Tencent IEG internship. Built in-engine lighting data collection and model training pipeline from scratch
+Independently led during Tencent IEG internship. SIGGRAPH 2027 Work In Progress
+![](/images/folio/Light/Pipeline.png)
+Using image generation models such as LumiNet or GPT Img 2 to transfer the lighting style of a reference image onto the Unlit render of an un-lit scene, then combined with GBuffer geometry information, fed into the subsequent lighting parameter extraction model to reconstruct explicit in-engine light parameters. Built the in-engine lighting data collection and model training pipeline from scratch for AI-assisted lighting
+![](/images/folio/Light/Extractor.png)
+The image-to-lighting-parameter extraction model requires training, so we built a lighting data collection pipeline from scratch, including but not limited to GBuffer and various light Component parameters, achieving Scaling Up via Jitter & OLAT data augmentation
+The model is designed as a DETR-like Extractor with a Coarse2Fine two-stage training strategy, using Hungarian matching to compute loss for predicting variable-length unordered sets. Data collection is still ongoing, but the model's capability has been preliminarily validated
 
-## UE5 Scene Lighting Pipeline & Physical Light Plugin
+## FPS Gameplay
 <video class="folio-video" controls preload="metadata" src="/images/folio/260710/FPS.mp4"></video>
+Implemented basic FPS gameplay logic from scratch: damage calculation, reloading, hit / recoil feedback
+Basic animation logic, animation blending with Aim Offset, and distinct designs for 5 weapons
+Complete health system, Niagara Blood Decal (environmental blood splatter), UMG screen blood stains / hit-direction indicator
+RPC network replication; first-person arms & third-person body developed simultaneously, with multicast animation / VFX / audio
+Red Dead Redemption 2 - Dead Eye:
+Skill activation/deactivation post-process animation, Time Dilation
+Maintains an FHitResult TQueue to achieve stable client-side marking UI and execution logic; server & client timer handles ensure correct animation execution
+
+## UE5 Scene Lighting
+### TOD System
 <video class="folio-video" controls preload="metadata" src="/images/folio/260710/TOD.mp4"></video>
-FPS scene lighting pipeline ensuring correct indoor/outdoor exposure; physical light fixture plugin with DataAsset config interface, unifying atmosphere, post-processing, TOD and lighting config
+Unifies physical atmosphere, procedural sky sphere, and PP exposure control; provides a standardized management workflow
+
+### Physical Light Fixture Plugin
+Scene lighting pipeline for FPS projects ensuring correct indoor/outdoor exposure; the physical light fixture plugin provides a DataAsset config interface, unifying atmosphere, post-processing, TOD and lighting config workflow
+
+## Physics-Field Foliage Interaction
+Uses a single-layer RT to simulate a mass-spring field; material samples the simulation result for WPO, achieving more natural bending and rebound
+Applies exponential decay along the foliage stem, greatly improving the WPO tearing issue
 
 ## VFX Works
-### Black Saber VFX
-<video class="folio-video" controls preload="metadata" src="/images/folio/VFX/黑Saber1.mp4"></video>
-### Sonetto VFX
-<video class="folio-video" controls preload="metadata" src="/images/folio/VFX/Sonetto.mp4"></video>
+### Black Saber Excalibur
+<video class="folio-video" controls preload="metadata" src="/images/folio/VFX/BlackSaber1.mp4"></video>
+Procedural + texture black-white flash, Modulate fake light, Houdini ground crack
 
-### VFX Tutorial
-A series of advanced effects using UE4 Niagara, materials and blueprints
+### Ice / Crystal
+<video class="folio-video" controls preload="metadata" src="/images/folio/VFX/Sonetto.mp4"></video>
+Crystal material, spline-based custom particle ribbon, posterization, shockwave, magic circle
+
+### Tutorial Works
 #### Fire Meteor & Hell Attack
 ![](/images/folio/VFX/Tutorial/陨石_火龙卷.gif)
-Crater by parallax occlusion, radial blur with stencil test, combo logic, UV shearing
+Parallax crater, post blur, combo logic, UV shearing...
 #### Thunder & Lightning Bolt
 ![](/images/folio/VFX/Tutorial/落雷.gif)
 ![](/images/folio/VFX/Tutorial/电弧.gif)
-Line field, asynchronous damage, ribbon tail with Niagara event
+Ribbon, line field, asynchronous damage, Event tail...
 #### Ice Spike & Annihilate
 ![](/images/folio/VFX/Tutorial/冰锥_歼灭.gif)
-SSS ice material, complex logic for searching enemy, Spawn Group
-#### Unity URP - Genshin Impact Character Shading
-![](/images/folio/VFX/Tutorial/甘雨仿原神渲染.gif)
-Ramp shadow, SDF face shadow, screen space rim light, backface normal outline
+Parallax ice surface, SSS ice spike, complex enemy-searching logic, Spawn Group...
 
-## Unity URP Toon Rendering
-<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/描边.mp4"></video>
-<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/GI1.mp4"></video>
+## Toon Rendering
+### UE5.7 Source-Modified Custom Toon Rendering
 <video class="folio-video" controls preload="metadata" src="/images/folio/Toon/Render.mp4"></video>
+Added a custom Shading Model with Ramp Atlas shadow transition, ILM AO / Specular
+Layered hair Matcap, Rim Light and other common toon rendering features
+Added an R16 G16 B16 A16 Toon Buffer with custom MRT Payload to pass data to the Deferred Lighting Pass for subsequent lighting calculation
+Spherical parallax eye rendering, with AO-corrected facial SDF shadow (Work In Progress)
+<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/描边.mp4"></video>
+Bakes tangent-space smoothed normals and curvature into the model's UV2 & UV3; Bake tool integrated into the engine right-click menu
+<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/GI1.mp4"></video>
+Custom-modified global illumination replacing spherical harmonics; flattens normals by modifying Lumen to simulate low-frequency GI, reducing the plastic look in dark areas
+
+### Unity URP - Genshin Impact Character Shading
+![](/images/folio/VFX/Tutorial/甘雨仿原神渲染.gif)
+Ramp shadow transition, screen-space equidistant rim light, backface normal outline, SDF face shadow...
+
+## Others
+### Shield Hit Effect
+![](/images/folio/shield_hit.gif)
+WPO, blueprint hit-response logic
+
+### Learning-Based Intelligent LOD Generation for VFX
+![](/images/folio/NiagaraAutoLod.gif)
+Initiated by Tencent IEG engine graphics remote project. Explored deep learning and reinforcement learning concepts, learned about VFX performance criteria, attempted theoretical modeling, and learned UE5 plugin development from scratch. Successfully implemented batch Niagara LOD module addition as shown (Slate UI, etc.)
+
+### C++ Software Ray Tracing Renderer
+![](/images/folio/GAMES101_PathTracing.png)
+![](/images/folio/In_One_Weekend_spp=100_small.png)
+![](/images/folio/The_Next_Week_Final_spp=1024_small.png)
+Following the GAMES101 course, independently implemented BVH and Monte-Carlo microsurface, then completed the whole renderer via Peter Shirley's Ray Tracing series, adding Tone Mapping and multi-threading on top
+
+### ShaderToy Practice
+![](/images/folio/ShaderToy.gif)

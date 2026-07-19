@@ -51,7 +51,10 @@ toc: true
   font-size: 0.9em;
   font-weight: 600;
   flex-shrink: 0;
+  width: 72px;
   line-height: 24px;
+  display: flex;
+  align-items: center;
 }
 .skill-card .skill-track {
   flex: 1;
@@ -87,6 +90,7 @@ toc: true
 }
 .edu-card {
   display: flex;
+  align-items: center;
   gap: 16px;
   padding: 20px;
   border: 1px solid rgba(128,128,128,0.15);
@@ -101,6 +105,9 @@ toc: true
   width: 56px;
   height: 56px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .edu-card .edu-badge img {
   width: 56px;
@@ -170,7 +177,36 @@ toc: true
   border-radius: 8px;
   margin: 8px 0;
 }
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid rgba(128,128,128,0.25);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 4px 0 12px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.lang-switch a {
+  padding: 6px 18px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.7;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+.lang-switch a:hover {
+  opacity: 1;
+}
+.lang-switch a.active {
+  background: #59ADB8;
+  color: #fff;
+  opacity: 1;
+}
 </style>
+
+<div class="lang-switch">
+  <a href="/about_cn/" class="active">简体中文</a>
+  <a href="/about_en/">English</a>
+</div>
 
 # About Me
 
@@ -245,7 +281,7 @@ toc: true
 
 <div class="edu-grid">
   <div class="edu-card">
-    <div class="edu-badge"><img src="/img/badge-shu.svg" alt="上海大学"></div>
+    <div class="edu-badge"><img src="/img/logo-shu.png" alt="上海大学"></div>
     <div class="edu-info">
       <div class="edu-name">上海大学</div>
       <div class="edu-major">数字媒体创意工程 · 硕士</div>
@@ -253,7 +289,7 @@ toc: true
     </div>
   </div>
   <div class="edu-card">
-    <div class="edu-badge"><img src="/img/badge-suibe.svg" alt="上海对外经贸大学"></div>
+    <div class="edu-badge"><img src="/img/logo-suibe.png" alt="上海对外经贸大学"></div>
     <div class="edu-info">
       <div class="edu-name">上海对外经贸大学</div>
       <div class="edu-major">数据科学与大数据技术 · 本科</div>
@@ -265,29 +301,54 @@ toc: true
 # Portfolio
 
 ## 可控视频镜头预演生成系统（ECCV 2026）
-<video class="folio-video" controls preload="metadata" src="/images/folio/Camera/teaser.mp4"></video>
 <video class="folio-video" controls preload="metadata" src="/images/folio/Camera/unity.mp4"></video>
+基于Unity搭建了一套完整的虚拟相机数据合成管线，包括三种常见相机数据的timeline烘焙工具，并完成了节点式分镜视频生成系统的开发
+<video class="folio-video" controls preload="metadata" src="/images/folio/Camera/teaser.mp4"></video>
 ![](/images/folio/Camera/method.png)
-以学生一作身份在 ECCV 2026 发表。研究如何将引擎内的镜头预演与现有视频生成大模型相结合，使视频生成工作流更可控。负责课题项目主要功能的实现，涉及：Unity内LLM交互生成剧本与拍摄方案（RAG/Schema结构化）、节点式GUI编辑器、3D相机轨迹数据集构建、基于自回归和Diffusion的轨迹生成模型训练、基于DPO的轨迹后训练
+以一作身份在 ECCV 2026（CV三大顶会之一）发表相关成果。研究如何将引擎内的镜头预演与现有视频生成大模型相结合，使视频生成工作流更可控。负责课题项目主要功能的实现，涉及：Unity内LLM交互生成剧本与拍摄方案（RAG/Schema结构化）、节点式GUI编辑器、3D相机轨迹数据集构建、基于自回归和Diffusion的轨迹生成模型训练、基于DPO的轨迹后训练
 
 ## UE5 AI 智能打光系统
-![](/images/folio/Light/Pipeline.png)
-![](/images/folio/Light/Extractor.png)
+### Agentic Pipeline
+HDBSCAN语义聚类初步分组，由聚类Agent推理后，交由Grounding DINO+Line Trace，实现逻辑光源的精确定位。Team Agent编排避免上下文膨胀
+### 数据驱动 Pipeline
 <video class="folio-video" controls preload="metadata" src="/images/folio/Light/灯光数据驱动demo.mp4"></video>
-腾讯IEG实习期间独立负责。从零搭建引擎内灯光数据采集与模型训练管线，实现AI辅助打光
+腾讯IEG实习期间独立负责。SIGGRAPH 2027 Work In Progress
+![](/images/folio/Light/Pipeline.png)
+使用LumiNet或GPT Img 2等图像生成模型，将参考图打光风格迁移到未打光场景的Unlit渲染结果上，再辅以GBuffer几何信息，共同交由后续灯光参数提取模型重建出引擎内显式灯光参数从零搭建引擎内灯光数据采集与模型训练管线，实现AI辅助打光
+![](/images/folio/Light/Extractor.png)
+图像灯光参数提取模型需要训练，为此我们从零搭建了灯光数据采集管线，包括但不限于Gbuffer、不同种类的灯光Component参数，通过Jitter & OLAT数据增强实现Scaling Up
+模型整体设计为DETR-like Extractor，Coarse2Fine双阶段训练策略，通过匈牙利匹配计算损失以适应非定长无序集合的预测。目前数据采集仍在进行中，但模型本身能力已完成初步验证
 
 ## FPS Gameplay
-
-## UE5 场景灯光管线 & 物理灯具插件
 <video class="folio-video" controls preload="metadata" src="/images/folio/260710/FPS.mp4"></video>
+从零实现伤害计算、换弹、受击/后坐力反馈等基础FPS gameplay逻辑
+基础动画逻辑、动画混合Aimpose以及5种枪支的不同设计
+完整的健康系统，Niagara Blood Decal（环境溅血），UMG屏幕血渍 / 受击方位指示器
+RPC网络同步，第一人称手臂&第三人称身体同时开发，动画/特效/音效 多播
+荒野大镖客2-死神之眼：
+技能开启/结束 后处理动画、Time Dilation
+维护FHitResult TQueue队列，实现稳定的客户端标记UI与执行逻辑；服务端&客户端计时器句柄确保动画正确执行
+
+## UE5 场景灯光
+### TOD系统
 <video class="folio-video" controls preload="metadata" src="/images/folio/260710/TOD.mp4"></video>
+统合物理大气、程序化天空球、 PP曝光控制；提供规范化的管理流程
+
+### 物理灯具插件
 适用于FPS项目的场景灯光管线，确保室内外曝光正确；物理灯具插件提供DataAsset配置接口，统合大气、后处理、TOD与灯光配置流程
 
+## 物理场植被交互
+使用单层RT模拟质点弹簧场，材质采样模拟结果做WPO，实现更加自然的弯折回弹
+沿植被茎秆应用指数衰减，极大改善植被WPO撕扯问题
+
 ## VFX 作品
-### 黑Saber 特效
+### 黑Saber Excalibur
 <video class="folio-video" controls preload="metadata" src="/images/folio/VFX/BlackSaber1.mp4"></video>
-### Sonetto 特效
+程序化+贴图黑白闪、 Modulate假光、 Houdini地裂
+
+### 冰系/水晶
 <video class="folio-video" controls preload="metadata" src="/images/folio/VFX/Sonetto.mp4"></video>
+晶体材质、 样条曲线自定义粒子带、色调分离、 冲击波、法阵
 
 ### Tutorial Works
 #### 陨石 & 火龙卷
@@ -303,9 +364,16 @@ Ribbon，直线场，伤害异步，Event拖尾...
 
 ## 卡通渲染
 ### UE5.7修改源码定制卡通渲染
-<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/描边.mp4"></video>
-<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/GI1.mp4"></video>
 <video class="folio-video" controls preload="metadata" src="/images/folio/Toon/Render.mp4"></video>
+新增自定义 Shading Model，定制实现 Ramp Atlas阴影过渡、ILM AO / Specular
+头发分层 Matcap，Rim Light等常见卡通渲染特性
+新增R16 G16 B16 A16  Toon Buffer，自定义MRT Payload，用于向
+Deferred Ligting Pass传递数据做后续光照计算
+球形视差眼睛渲染，带AO修正面部SDF阴影（Work In Progress）
+<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/描边.mp4"></video>
+将切线空间平滑法线与曲率Bake进模型UV2&UV3，引擎右键菜单集成Bake工具
+<video class="folio-video" controls preload="metadata" src="/images/folio/Toon/GI1.mp4"></video>
+定制修改全局光照，替代球谐，通过修改Lumen抹平法线模拟低频GI，降低暗部塑料感
 
 ### Unity URP - 仿原神渲染
 ![](/images/folio/VFX/Tutorial/甘雨仿原神渲染.gif)

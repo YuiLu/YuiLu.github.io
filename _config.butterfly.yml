@@ -18,9 +18,7 @@ menu:
   Life||fa fa-heartbeat:
     Travel: /travel/ || fas fa-plane-departure
     ACGN: /animes/ || fas fa-mug-hot
-  About||fas fa-user:
-    简体中文: /about_cn/
-    English: /about_en/
+  About: /about_cn/ || fas fa-user
 
 # Code Blocks (代碼相關)
 # --------------------------------------
