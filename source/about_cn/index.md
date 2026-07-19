@@ -42,11 +42,12 @@ toc: true
   align-items: center;
   justify-content: center;
 }
-.skill-card .skill-icon img {
+#article-container .skill-card .skill-icon img {
   width: 24px;
   height: 24px;
   object-fit: contain;
   display: block;
+  margin: 0;
 }
 .skill-card .skill-name {
   font-size: 0.9em;
@@ -110,11 +111,12 @@ toc: true
   align-items: center;
   justify-content: center;
 }
-.edu-card .edu-badge img {
+#article-container .edu-card .edu-badge img {
   width: 56px;
   height: 56px;
   object-fit: contain;
   display: block;
+  margin: 0;
 }
 .edu-card .edu-info {
   flex: 1;
@@ -189,24 +191,25 @@ toc: true
   line-height: 1;
   vertical-align: middle;
 }
-.lang-switch a {
+#article-container .lang-switch a {
   padding: 4px 12px;
   border-radius: 999px;
   text-decoration: none;
   color: #666;
   transition: background 0.2s, color 0.2s;
 }
-[data-theme="dark"] .lang-switch a {
-  color: #aaa;
+[data-theme="dark"] #article-container .lang-switch a {
+  color: #ccc;
 }
-.lang-switch a:hover {
+#article-container .lang-switch a:hover {
   color: #59ADB8;
+  text-decoration: none;
 }
-.lang-switch a.active {
+#article-container .lang-switch a.active {
   background: #59ADB8;
   color: #fff;
 }
-[data-theme="dark"] .lang-switch a.active {
+#article-container .lang-switch a.active:hover {
   color: #fff;
 }
 .about-head {

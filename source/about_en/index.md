@@ -42,11 +42,12 @@ toc: true
   align-items: center;
   justify-content: center;
 }
-.skill-card .skill-icon img {
+#article-container .skill-card .skill-icon img {
   width: 24px;
   height: 24px;
   object-fit: contain;
   display: block;
+  margin: 0;
 }
 .skill-card .skill-name {
   font-size: 0.9em;
@@ -110,11 +111,12 @@ toc: true
   align-items: center;
   justify-content: center;
 }
-.edu-card .edu-badge img {
+#article-container .edu-card .edu-badge img {
   width: 56px;
   height: 56px;
   object-fit: contain;
   display: block;
+  margin: 0;
 }
 .edu-card .edu-info {
   flex: 1;
@@ -189,24 +191,25 @@ toc: true
   line-height: 1;
   vertical-align: middle;
 }
-.lang-switch a {
+#article-container .lang-switch a {
   padding: 4px 12px;
   border-radius: 999px;
   text-decoration: none;
   color: #666;
   transition: background 0.2s, color 0.2s;
 }
-[data-theme="dark"] .lang-switch a {
-  color: #aaa;
+[data-theme="dark"] #article-container .lang-switch a {
+  color: #ccc;
 }
-.lang-switch a:hover {
+#article-container .lang-switch a:hover {
   color: #59ADB8;
+  text-decoration: none;
 }
-.lang-switch a.active {
+#article-container .lang-switch a.active {
   background: #59ADB8;
   color: #fff;
 }
-[data-theme="dark"] .lang-switch a.active {
+#article-container .lang-switch a.active:hover {
   color: #fff;
 }
 .about-head {
@@ -232,12 +235,15 @@ toc: true
 </div>
 
 </div>
-* Began learning Technical Artist skills (AI/VFX/Rendering/Tools) since 2022. Self-completed GAMES101 and GAMES202, documenting the journey on Zhihu
-* Published a paper on controllable video camera preview generation system at ECCV 2026 as first student author
-* IELTS 7.0, able to read cutting-edge English literature and technical docs without barriers
-* Solid foundations in mathematical statistics, closely following AIGC and 3D vision developments
-* Tech Otaku with strong self-drive, able to quickly absorb new knowledge and apply it. Love researching implementation principles of in-game VFX
-* Hobbies: finger-style / electric guitar, ACGN enthusiast, Kigurumi, photography
+
+* Started systematically learning skills at the intersection of game graphics and AI since 2022 (Rendering / AI / VFX / Toolchain)
+* Published work on a controllable video camera preview generation system at ECCV 2026 as first student author
+* Good English reading and writing skills (IELTS 7.0), able to read cutting-edge English literature and technical docs without barriers
+* Solid foundations in mathematical statistics and data science, with experience in model training and dataset construction & processing
+* A certain knowledge reserve in computer graphics, familiar with basic data structures and algorithm principles
+* Tech otaku with strong self-drive and learning initiative, able to quickly absorb new knowledge and apply it in practice. Love researching the implementation principles of in-game special effects
+* Familiar with common toon rendering techniques, having attempted to land and implement effects in both Unity and UE5
+* Hobbies: ACGN enthusiast, Kigurumi, photography, fingerstyle guitar<span class='heimu' title="You know too much">(listen only, don't play)</span> / electric guitar, and everything related to computer graphics
 
 # Skills
 
