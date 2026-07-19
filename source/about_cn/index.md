@@ -40,6 +40,7 @@ toc: true
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .skill-card .skill-icon img {
   width: 24px;
@@ -179,36 +180,58 @@ toc: true
 }
 .lang-switch {
   display: inline-flex;
-  border: 1px solid rgba(128,128,128,0.25);
+  gap: 2px;
+  padding: 2px;
   border-radius: 999px;
-  overflow: hidden;
-  margin: 4px 0 12px;
-  font-size: 0.85em;
+  background: rgba(128,128,128,0.12);
+  font-size: 0.75em;
   font-weight: 600;
+  line-height: 1;
+  vertical-align: middle;
 }
 .lang-switch a {
-  padding: 6px 18px;
+  padding: 4px 12px;
+  border-radius: 999px;
   text-decoration: none;
-  color: inherit;
-  opacity: 0.7;
-  transition: background 0.2s, color 0.2s, opacity 0.2s;
+  color: #666;
+  transition: background 0.2s, color 0.2s;
+}
+[data-theme="dark"] .lang-switch a {
+  color: #aaa;
 }
 .lang-switch a:hover {
-  opacity: 1;
+  color: #59ADB8;
 }
 .lang-switch a.active {
   background: #59ADB8;
   color: #fff;
-  opacity: 1;
+}
+[data-theme="dark"] .lang-switch a.active {
+  color: #fff;
+}
+.about-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.about-head h1 {
+  margin: 0;
+  border: none;
 }
 </style>
+
+<div class="about-head">
+
+# About Me
 
 <div class="lang-switch">
   <a href="/about_cn/" class="active">简体中文</a>
   <a href="/about_en/">English</a>
 </div>
 
-# About Me
+</div>
 
 * 于 2022 年开始系统接触游戏图形与 AI 交叉领域的相关技能（渲染/AI/特效/工具链）
 * 以学生一作身份在 ECCV 2026 发表可控视频镜头预演生成系统相关成果
@@ -229,7 +252,7 @@ toc: true
 <div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
 <div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
 <div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
-<div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="#59ADB8" xmlns="http://www.w3.org/2000/svg"><path d="M0 19.635V24h3.824A8.662 8.662 0 0 1 0 19.635zm16.042-4.555c0-4.037-3.253-7.92-8.111-8.089C4.483 6.873 1.801 8.136 0 10.005v4.209c1.224-3.549 4.595-5.158 7.419-5.128 3.531.041 6.251 2.703 6.275 5.72 0 2.878-1.183 4.992-4.436 5.516-1.774.296-4.548-.754-4.436-3.434.065-1.381 1.138-2.162 2.366-2.106-1.207 1.618.39 2.801 1.52 2.561a2.51 2.51 0 0 0 1.966-2.502c0-1.017-.958-2.662-3.333-2.6-2.936.068-4.785 2.183-4.85 4.797-.071 3.28 3.007 5.457 6.174 5.483 4.633.059 7.395-2.984 7.377-7.441zM0 0v6.906a12.855 12.855 0 0 1 7.931-2.609c6.801 0 11.134 4.762 11.131 10.765 0 4.17-1.946 7.308-4.995 8.938H24V0H0z"/></svg></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="#FF4713" xmlns="http://www.w3.org/2000/svg"><path d="M0 19.635V24h3.824A8.662 8.662 0 0 1 0 19.635zm16.042-4.555c0-4.037-3.253-7.92-8.111-8.089C4.483 6.873 1.801 8.136 0 10.005v4.209c1.224-3.549 4.595-5.158 7.419-5.128 3.531.041 6.251 2.703 6.275 5.72 0 2.878-1.183 4.992-4.436 5.516-1.774.296-4.548-.754-4.436-3.434.065-1.381 1.138-2.162 2.366-2.106-1.207 1.618.39 2.801 1.52 2.561a2.51 2.51 0 0 0 1.966-2.502c0-1.017-.958-2.662-3.333-2.6-2.936.068-4.785 2.183-4.85 4.797-.071 3.28 3.007 5.457 6.174 5.483 4.633.059 7.395-2.984 7.377-7.441zM0 0v6.906a12.855 12.855 0 0 1 7.931-2.609c6.801 0 11.134 4.762 11.131 10.765 0 4.17-1.946 7.308-4.995 8.938H24V0H0z"/></svg></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
 </div>
 
 # Work Experience
