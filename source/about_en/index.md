@@ -6,44 +6,128 @@ top_img: /img/top_img_eva_compress.jpg
 toc: true
 ---
 <style>
-.skill-row {
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.skill-card {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid rgba(128,128,128,0.15);
+  border-radius: 8px;
+  background: rgba(128,128,128,0.03);
 }
-.skill-row .skill-icon {
+[data-theme="dark"] .skill-card {
+  border-color: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+.skill-card .skill-icon {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
-.skill-row .skill-icon img {
+.skill-card .skill-icon img {
   width: 24px;
   height: 24px;
   object-fit: contain;
   display: block;
 }
-.skill-row .skill-name {
+.skill-card .skill-name {
   font-size: 0.9em;
-  line-height: 24px;
+  font-weight: 600;
   flex-shrink: 0;
-  margin-right: 10px;
+  line-height: 24px;
 }
-.skill-row .skill-track {
+.skill-card .skill-track {
   flex: 1;
+  min-width: 0;
   height: 8px;
   background: rgba(128,128,128,0.15);
   border-radius: 4px;
   overflow: hidden;
 }
-[data-theme="dark"] .skill-row .skill-track {
+[data-theme="dark"] .skill-card .skill-track {
   background: rgba(255,255,255,0.08);
 }
-.skill-row .skill-fill {
+.skill-card .skill-fill {
   height: 100%;
   border-radius: 4px;
   background: linear-gradient(90deg, #59ADB8, #4a9aa4);
   transition: width 0.8s ease;
+}
+.skill-card .skill-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.edu-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid rgba(128,128,128,0.15);
+  border-radius: 8px;
+  background: rgba(128,128,128,0.03);
+}
+[data-theme="dark"] .edu-card {
+  border-color: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+.edu-card .edu-badge {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+.edu-card .edu-badge img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
+}
+.edu-card .edu-info {
+  flex: 1;
+  min-width: 0;
+}
+.edu-card .edu-name {
+  font-size: 1em;
+  font-weight: bold;
+  color: #59ADB8;
+}
+[data-theme="dark"] .edu-card .edu-name {
+  color: #7fd0d9;
+}
+.edu-card .edu-major {
+  font-size: 0.9em;
+  margin: 4px 0;
+  opacity: 0.9;
+}
+.edu-card .edu-date {
+  font-size: 0.85em;
+  opacity: 0.7;
 }
 .work-entry {
   margin-bottom: 24px;
@@ -89,7 +173,6 @@ toc: true
 </style>
 
 # About Me
-* M.Sc. in Digital Media Creative Engineering at Shanghai University; B.Sc. in Data Science & Big Data Technology at Shanghai University of International Business and Economics
 * Began learning Technical Artist skills (AI/VFX/Rendering/Tools) since 2022. Self-completed GAMES101 and GAMES202, documenting the journey on Zhihu
 * Published a paper on controllable video camera preview generation system at ECCV 2026 as first student author
 * IELTS 7.0, able to read cutting-edge English literature and technical docs without barriers
@@ -99,14 +182,16 @@ toc: true
 
 # Skills
 
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"></span><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hlsl/hlsl-original.svg" alt="HLSL" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'"></span><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></span><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></span><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
-<div class="skill-row"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/houdini.svg" alt="Houdini" onerror="this.style.display='none'" style="filter:invert(0.5) sepia(1) hue-rotate(140deg) saturate(3)"></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
+<div class="skills-grid">
+<div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"></span><span class="skill-name">C#</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="HLSL"></span><span class="skill-name">Cg/HLSL</span><div class="skill-track"><div class="skill-fill" style="width:85%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></span><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" style="width:75%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></span><span class="skill-name">C++</span><div class="skill-track"><div class="skill-fill" style="width:60%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="UE5"></span><span class="skill-name">UE5</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"></span><span class="skill-name">Unity</span><div class="skill-track"><div class="skill-fill" style="width:80%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></span><span class="skill-name">Blender</span><div class="skill-track"><div class="skill-fill" style="width:55%"></div></div></div>
+<div class="skill-card"><span class="skill-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="#59ADB8" xmlns="http://www.w3.org/2000/svg"><path d="M0 19.635V24h3.824A8.662 8.662 0 0 1 0 19.635zm16.042-4.555c0-4.037-3.253-7.92-8.111-8.089C4.483 6.873 1.801 8.136 0 10.005v4.209c1.224-3.549 4.595-5.158 7.419-5.128 3.531.041 6.251 2.703 6.275 5.72 0 2.878-1.183 4.992-4.436 5.516-1.774.296-4.548-.754-4.436-3.434.065-1.381 1.138-2.162 2.366-2.106-1.207 1.618.39 2.801 1.52 2.561a2.51 2.51 0 0 0 1.966-2.502c0-1.017-.958-2.662-3.333-2.6-2.936.068-4.785 2.183-4.85 4.797-.071 3.28 3.007 5.457 6.174 5.483 4.633.059 7.395-2.984 7.377-7.441zM0 0v6.906a12.855 12.855 0 0 1 7.931-2.609c6.801 0 11.134 4.762 11.131 10.765 0 4.17-1.946 7.308-4.995 8.938H24V0H0z"/></svg></span><span class="skill-name">Houdini</span><div class="skill-track"><div class="skill-fill" style="width:45%"></div></div></div>
+</div>
 
 # Work Experience
 
@@ -150,6 +235,27 @@ toc: true
       <li>Participated in Project One Up, assisted with external asset onboarding under project specifications</li>
       <li>Developed and maintained in-engine texture channel merging/mapping tools and scene material override scanning tools</li>
     </ul>
+  </div>
+</div>
+
+# Education
+
+<div class="edu-grid">
+  <div class="edu-card">
+    <div class="edu-badge"><img src="/img/badge-shu.svg" alt="Shanghai University"></div>
+    <div class="edu-info">
+      <div class="edu-name">Shanghai University</div>
+      <div class="edu-major">Digital Media Creative Engineering · M.Sc.</div>
+      <div class="edu-date">2024 — 2027</div>
+    </div>
+  </div>
+  <div class="edu-card">
+    <div class="edu-badge"><img src="/img/badge-suibe.svg" alt="SUIBE"></div>
+    <div class="edu-info">
+      <div class="edu-name">Shanghai University of International Business and Economics</div>
+      <div class="edu-major">Data Science & Big Data Technology · B.Sc.</div>
+      <div class="edu-date">2020 — 2024</div>
+    </div>
   </div>
 </div>
 
